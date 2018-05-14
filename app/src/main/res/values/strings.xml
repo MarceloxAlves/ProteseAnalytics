@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProteseAnalytics</string>
+    <string name="login">Login</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="bem_vindo_ao_ben_hero_app">Bem vindo ao Ben Hero App</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>
