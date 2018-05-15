@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.SiginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/gradiente_backgroud">
+
+        <TextView
+            android:id="@+id/textBemVindo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:text="@string/bem_vindo_ao_ben_hero"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:hint="@string/digite_o_seu_nome"
+            android:background="@drawable/custom_button"
+             />
+
+        <EditText
+            android:id="@+id/editCelular"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button"
+            android:hint="@string/numero_do_celular"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/editCelularSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button"
+            android:hint="@string/numero_do_segundo_celular"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/editEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_button"
+            android:hint="@string/endere_o"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack" />
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:text="@string/email"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:hint="@string/password"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+        <RadioGroup
+            android:id="@+id/tipoPessoaRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/profissionalRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profissional_da_sa_de"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/pacienteRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/paciente"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/salvar" />
+
+    </LinearLayout>
+
+</ScrollView>
