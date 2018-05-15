@@ -2,13 +2,17 @@ package br.com.m2j.proteseanalytics.models;
 
 public enum TipoPessoa {
 
-    MEDICO("medico"),
-    PACIENTE("paciente"),
-    DESENVOLVEDOR("desenvolvedor");
+    MEDICO(1),
+    PACIENTE(2),
+    DESENVOLVEDOR(3);
 
-    private String descricao;
+    private int tipoPessoa;
 
-    TipoPessoa(String descricao) {
-        this.descricao = descricao;
+    TipoPessoa(int tipo) {
+        this.tipoPessoa = tipo;
+    }
+
+    public int getTipoPessoa() {
+        return tipoPessoa;
     }
 }
