@@ -2,17 +2,17 @@ package br.com.m2j.proteseanalytics.models;
 
 public enum IndentificacaoDeCoto {
 
-    BracoEsquerdo("Braço Esquerdo"),
-    BracoDireito("Braço Direito"),
-    AmbosBracos("Ambos os Braços");
+    ESQUERDO(1),
+    DIREITO(2),
+    AMBOS(3);
 
-    private final String braço;
+    private final int valorBraco;
 
-    IndentificacaoDeCoto(String braço) {
-        this.braço = braço;
+    IndentificacaoDeCoto(int valorBraco) {
+        this.valorBraco = valorBraco;
     }
 
-    public String getBraço() {
-        return braço;
+    public int getValorBraco() {
+        return valorBraco;
     }
 }

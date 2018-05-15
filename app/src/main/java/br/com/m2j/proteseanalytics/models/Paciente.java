@@ -8,11 +8,14 @@ import br.com.m2j.proteseanalytics.models.Pessoa;
 public class Paciente extends Pessoa{
 
     private IndentificacaoDeCoto idCoto;
-    private List<Patologia> patologias = new ArrayList<>();
-    private Medico medico = new Medico();
+    private BracoDeUso idBracoDeUso;
+    private List<Patologia> patologias;
+    private Medico medico;
 
     public Paciente(String nome) {
         super(nome);
+        patologias = new ArrayList<>();
+        medico = new Medico();
     }
 
 
