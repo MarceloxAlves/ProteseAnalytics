@@ -12,10 +12,10 @@ public class Paciente extends Pessoa{
     private List<Patologia> patologias;
     private Medico medico;
 
-    public Paciente(String nome) {
+    public Paciente(String nome, Medico medico) {
         super(nome);
         patologias = new ArrayList<>();
-        medico = new Medico();
+        this.medico = medico;
     }
 
 
