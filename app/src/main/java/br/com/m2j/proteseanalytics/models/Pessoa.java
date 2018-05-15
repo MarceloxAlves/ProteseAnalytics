@@ -1,6 +1,6 @@
 package br.com.m2j.proteseanalytics.models;
 
-public abstract class Pessoa {
+public class Pessoa {
 
     private String nome;
     private String celularPrincipal;
@@ -10,13 +10,8 @@ public abstract class Pessoa {
     private String senha;
     private TipoPessoa tipo;
 
-    public Pessoa(String nome, String celularPrincipal, Endereco endereco,
-                  String email, TipoPessoa tipo) {
+    public Pessoa(String nome) {
         this.nome = nome;
-        this.celularPrincipal = celularPrincipal;
-        this.endereco = endereco;
-        this.email = email;
-        this.tipo = tipo;
     }
 
     public String getNome() {
