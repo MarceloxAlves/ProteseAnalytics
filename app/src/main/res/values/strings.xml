@@ -19,4 +19,12 @@
     <string name="numero_do_segundo_celular">*Numero do segundo celular</string>
     <string name="endere_o">Endereço</string>
     <string name="salvar">Salvar</string>
+    <string name="esquerdo">Esquerdo</string>
+    <string name="direito">Direito</string>
+    <string name="ambos">Ambos</string>
+    <string name="qual_o_s_lado_s_da_protese">Qual o(s) lado(s) da protese?</string>
+    <string name="voc_paciente_ou_profissional_responsavel">Você é paciente ou profissional responsavel?</string>
+    <string name="profissional">Profissional</string>
+    <string name="crm">Crm</string>
+    <string name="uf_crm">UF CRM</string>
 </resources>

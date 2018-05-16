@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente_backgroud"
+    tools:context=".app.SiginChoseActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="@string/voc_paciente_ou_profissional_responsavel"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="170dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/cadastrarMedico"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="irParaCadastroMedico"
+            android:background="@drawable/custom_butom_chose"
+            android:text="@string/profissional"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/cadastrarPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="irParaCadastroPaciente"
+            android:background="@drawable/custom_butom_chose"
+            android:text="@string/paciente"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

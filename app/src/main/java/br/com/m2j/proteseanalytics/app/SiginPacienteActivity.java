@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import br.com.m2j.proteseanalytics.R;
 
-public class SiginActivity extends AppCompatActivity {
+public class SiginPacienteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sigin);
+        setContentView(R.layout.activity_sigin_paciente);
     }
 }

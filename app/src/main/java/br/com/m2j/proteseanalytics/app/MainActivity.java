@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void realizarCadastro(View view) {
         //ToDO::cadastro
+        startActivity(new Intent(this,SiginChoseActivity.class));
     }
 
     public void autentificarComFacebook(View view) {
