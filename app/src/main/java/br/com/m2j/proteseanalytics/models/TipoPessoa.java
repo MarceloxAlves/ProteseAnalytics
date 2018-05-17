@@ -6,7 +6,7 @@ public enum TipoPessoa {
     PACIENTE(2),
     DESENVOLVEDOR(3);
 
-    private int tipoPessoa;
+    private final int tipoPessoa;
 
     TipoPessoa(int tipo) {
         this.tipoPessoa = tipo;
