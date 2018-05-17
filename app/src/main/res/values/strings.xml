@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">ProteseAnalytics</string>
+    <string name="login">Login</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="bem_vindo_ao_ben_hero_app">Bem vindo ao Ben Hero App</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_com_o_facebook">Login com o facebook</string>
+    <string name="no_account">No account?</string>
+    <string name="sing_up">Sing up</string>
+    <string name="email">Email</string>
+    <string name="proceed">Proceed</string>
+    <string name="login_com_o_google">Login com o google</string>
+    <string name="bem_vindo_ao_ben_hero">Bem vindo ao BEN HERO</string>
+    <string name="profissional_da_sa_de">Profissional da saúde</string>
+    <string name="paciente">Paciente</string>
+    <string name="digite_o_seu_nome">Digite o seu nome</string>
+    <string name="numero_do_celular">Numero do celular</string>
+    <string name="numero_do_segundo_celular">*Numero do segundo celular</string>
+    <string name="endere_o">Endereço</string>
+    <string name="salvar">Salvar</string>
+    <string name="esquerdo">Esquerdo</string>
+    <string name="direito">Direito</string>
+    <string name="ambos">Ambos</string>
+    <string name="qual_o_s_lado_s_da_protese">Qual o(s) lado(s) da protese?</string>
+    <string name="voc_paciente_ou_profissional_responsavel">Você é paciente ou profissional responsavel?</string>
+    <string name="profissional">Profissional</string>
+    <string name="crm">Crm</string>
+    <string name="uf_crm">UF CRM</string>
 </resources>
