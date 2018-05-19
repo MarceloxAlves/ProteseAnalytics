@@ -33,9 +33,7 @@
         <activity android:name=".app.RealTimeGraphicActivity">
           
         </activity>
-        <activity
-            android:name=".app.PacienteMainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 
 </manifest>
