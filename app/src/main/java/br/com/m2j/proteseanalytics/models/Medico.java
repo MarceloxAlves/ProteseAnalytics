@@ -4,7 +4,7 @@ package br.com.m2j.proteseanalytics.models;
  * Created by Marcelo on 17/05/2018.
  */
 
-class Medico extends Pessoa {
+public class Medico extends Pessoa {
 
     private Double crm;
     private String especialidade;
