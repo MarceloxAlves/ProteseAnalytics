@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.LoginActivity"
+    android:background="@drawable/gradiente_backgroud">
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/custom_button"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/txtTeste"
+        android:layout_width="342dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/custom_button"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack" />
+
+    <ProgressBar
+        android:id="@+id/barrinha"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

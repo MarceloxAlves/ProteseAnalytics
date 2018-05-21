@@ -8,6 +8,7 @@ class Medico extends Pessoa {
 
     private Double crm;
     private String especialidade;
+
     public Medico(String nome) {
         super(nome);
     }
@@ -27,4 +28,5 @@ class Medico extends Pessoa {
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
     }
+
 }

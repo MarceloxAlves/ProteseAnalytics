@@ -3,7 +3,6 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        multiDexEnabled true
         applicationId "br.com.m2j.proteseanalytics"
         minSdkVersion 23
         targetSdkVersion 26
@@ -17,6 +16,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
     }
     compileOptions {
         targetCompatibility 1.8
@@ -28,13 +32,15 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:26.0.0'
-    implementation 'com.android.support.constraint:constraint-layout:tronco.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:tronco.0.tronco'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.tronco'
-    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'   
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile 'com.android.support:recyclerview-v7:26.0.0'
     compile 'com.android.support:cardview-v7:26.0.0'
     compile 'com.android.support:design:26.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 
+    compile  'com.google.android.gms:play-services-auth:11.8.0'
 }
