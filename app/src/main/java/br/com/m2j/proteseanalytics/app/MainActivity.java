@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void realizarLogin(View view) {
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(this, LoginPacienteActivity.class));
     }
 
     public void realizarCadastro(View view) {

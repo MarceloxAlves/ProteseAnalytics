@@ -32,4 +32,5 @@
     <string name="conectividade">Conectividade</string>
     <string name="debug">Debug</string>
     <string name="game">Game</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>
