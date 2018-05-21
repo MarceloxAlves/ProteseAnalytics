@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".app.MainActivity"
+            android:name=".app.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,12 +21,9 @@
         <activity
             android:name=".app.MainPacienteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
         </activity>
-        <activity
             android:name=".app.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
         </activity>
         <activity
             android:name=".app.SiginPacienteActivity"
@@ -39,6 +36,8 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".app.LoginPacienteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name=".app.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
     </application>
