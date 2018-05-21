@@ -27,16 +27,18 @@ public class MainPacienteActivity extends AppCompatActivity {
     }
 
     public void irParaTelaDePerfil(View view) {
+        startActivity(new Intent(this,PacientePerfilActivity.class));
     }
 
     public void irParaTelaDeConectividade(View view) {
+        startActivity(new Intent(this,JogoActivity.class));
     }
 
     public void irParaTelaDeDebug(View view) {
+        startActivity(new Intent(this,JogoActivity.class));
     }
 
     public void irParaGame(View view) {
         startActivity(new Intent(this,JogoActivity.class));
-        finish();
     }
 }

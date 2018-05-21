@@ -1,5 +1,6 @@
 package br.com.m2j.proteseanalytics.app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,5 +27,7 @@ public class LoginPacienteActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
+        startActivity(new Intent(this, MainPacienteActivity.class));
+        finish();
     }
 }
