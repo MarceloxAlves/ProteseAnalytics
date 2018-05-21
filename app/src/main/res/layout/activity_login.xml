@@ -1,64 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiente_backgroud"
-    tools:context=".app.LoginActivity">
+    tools:context=".app.LoginActivity"
+    android:background="@drawable/gradiente_backgroud">
 
     <EditText
         android:id="@+id/editEmail"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="171dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="205dp"
         android:background="@drawable/custom_button"
         android:hint="@string/email"
         android:textAlignment="center"
         android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textColorHint="@color/colorBlack" />
 
     <EditText
         android:id="@+id/editPassword"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
         android:background="@drawable/custom_button"
         android:hint="@string/password"
-        android:textAlignment="center"
         android:inputType="textPassword"
+        android:textAlignment="center"
         android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorBlack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+        android:textColorHint="@color/colorBlack" />
 
     <Button
         android:id="@+id/logar_btn"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginBottom="41dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:background="@drawable/custom_butom_facebook"
+        android:onClick="logar"
         android:text="@string/proceed"
         android:textColor="@color/colorWhite"
-        android:background="@drawable/custom_butom_facebook"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="logar"/>
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245dp"
+        app:buttonSize="wide" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

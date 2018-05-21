@@ -11,15 +11,22 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".app.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity
-            android:name=".app.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-              <intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.MainPacienteActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".app.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         </activity>
         <activity
             android:name=".app.SiginPacienteActivity"
@@ -30,10 +37,10 @@
         <activity
             android:name=".app.SiginChoseActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".app.RealTimeGraphicActivity">
-          
-        </activity>
+        <activity android:name=".app.LoginPacienteActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
 
+        </activity>
     </application>
 
 </manifest>
