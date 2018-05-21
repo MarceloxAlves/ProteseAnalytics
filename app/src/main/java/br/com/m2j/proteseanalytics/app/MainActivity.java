@@ -29,7 +29,5 @@ public class MainActivity extends AppCompatActivity {
         //ToDO::loginFacebook
     }
 
-    public void autentificarComGoogle(View view) {
-        //ToDO::loginFacebook
-    }
+
 }

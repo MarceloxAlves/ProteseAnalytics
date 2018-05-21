@@ -1,77 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradiente_backgroud"
+    android:background="@color/colorVerde3"
     tools:context=".app.MainActivity">
 
-    <Button
-        android:id="@+id/login_btn"
-        android:layout_width="300dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="264dp"
-        android:background="@drawable/custom_button"
-        android:onClick="realizarLogin"
-        android:text="@string/login"
-        android:textColor="@color/colorBlack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="178dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-    <Button
-        android:id="@+id/login_facebook_btn"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:background="@drawable/custom_butom_facebook"
-        android:onClick="autentificarComFacebook"
-        android:text="@string/login_com_o_facebook"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/colorVerde5"
+            android:onClick="realizarLogin"
+            android:text="@string/login"
+            android:textColor="@color/colorBlack" />
 
-    <Button
-        android:id="@+id/login_google_btn"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="17dp"
-        android:background="@drawable/custom_butom_google"
-        android:text="@string/login_com_o_google"
-        android:onClick="autentificarComGoogle"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_facebook_btn" />
+        <Button
+            android:id="@+id/sing_up_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="@color/colorVerde5"
+            android:onClick="realizarCadastro"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorBlack" />
 
-    <TextView
-        android:id="@+id/textView"
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="83dp"
-        android:text="@string/no_account"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        >
+
+    </com.google.android.gms.common.SignInButton>
 
     <Button
-        android:id="@+id/sing_up_btn"
-        android:layout_width="300dp"
+        android:id="@+id/facebook_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="42dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button"
-        android:onClick="realizarCadastro"
-        android:text="@string/sing_up"
-        android:textColor="@color/colorBlack"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_below="@id/google_btn"
+        android:layout_centerHorizontal="true"/>
 
-</android.support.constraint.ConstraintLayout>
+
+
+</RelativeLayout>

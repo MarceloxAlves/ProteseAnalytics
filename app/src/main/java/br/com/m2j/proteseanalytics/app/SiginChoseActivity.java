@@ -20,6 +20,6 @@ public class SiginChoseActivity extends AppCompatActivity {
     }
 
     public void irParaCadastroPaciente(View view) {
-        startActivity(new Intent(this,SiginMedicoActivity.class));
+        startActivity(new Intent(this,SiginPacienteActivity.class));
     }
 }
