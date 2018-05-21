@@ -20,12 +20,10 @@
         </activity>
         <activity
             android:name=".app.MainPacienteActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".app.LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".app.SiginPacienteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -35,11 +33,13 @@
         <activity
             android:name=".app.SiginChoseActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".app.LoginPacienteActivity"
+        <activity
+            android:name=".app.LoginPacienteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".app.MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
+        <activity
+            android:name=".app.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".app.JogoActivity"></activity>
     </application>
 
 </manifest>
