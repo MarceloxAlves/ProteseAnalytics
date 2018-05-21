@@ -15,7 +15,7 @@ public class Paciente extends Pessoa{
     public Paciente(String nome) {
         super(nome);
         patologias = new ArrayList<>();
-        medico = new Medico();
+        medico = new Medico("");
     }
 
 
