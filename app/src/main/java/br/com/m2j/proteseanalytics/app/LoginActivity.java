@@ -33,8 +33,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         signInButton.setSize(SignInButton.SIZE_STANDARD);
         signInButton.setOnClickListener(this);
          gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
+                 .requestEmail()
+                 .requestIdToken(getString(R.string.server_client_id))
+                 .build();
          mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
     }
@@ -83,6 +84,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         try {
             GoogleSignInAccount account = task.getResult(ApiException.class);
             updateUI(account);
+            Log.w(TAG, ""+account.getIdToken());
         } catch (ApiException e) {
             Log.w(TAG, "signInResult:failed code=" + e.getStatusCode());
             updateUI(null);

@@ -22,6 +22,7 @@
             android:name=".app.MainPacienteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
+        <activity
             android:name=".app.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
@@ -35,7 +36,7 @@
             android:name=".app.SiginChoseActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".app.LoginPacienteActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".app.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
