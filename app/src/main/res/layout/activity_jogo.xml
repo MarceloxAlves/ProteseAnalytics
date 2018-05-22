@@ -14,15 +14,21 @@
         android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/fase_name"
-            android:layout_width="wrap_content"
+            android:layout_width="219dp"
             android:layout_height="wrap_content"
-            android:text="Stage: May"
-            android:textStyle="bold"
             android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Stage: May"
             android:textSize="20sp"
-            android:layout_margin="10dp"/>
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/level_vilao"
             android:layout_width="wrap_content"
