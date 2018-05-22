@@ -34,4 +34,9 @@
     <string name="game">Game</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="play">play</string>
+
+    <!--identificação facebook-->
+    <string name="facebook_app_id">191188654857821</string>
+    <string name="fb_login_protocol_scheme">fb191188654857821</string>
+
 </resources>
