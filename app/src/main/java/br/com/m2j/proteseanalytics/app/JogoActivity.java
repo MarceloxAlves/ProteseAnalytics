@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -22,6 +23,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -48,11 +50,13 @@ public class JogoActivity extends AppCompatActivity {
     private Set<BluetoothDevice> mPairedDevices;
     private ArrayAdapter<String> mBTArrayAdapter;
     private ListView mDevicesListView;
+    private ImageView vilao;
 
     private boolean statusMao;
     private int modo = 0;
     private int  progresso = 0;
     private int incremento = 15;
+    private  boolean primeira = true;
 
     private ProgressBar progressBar;
 
@@ -71,16 +75,24 @@ public class JogoActivity extends AppCompatActivity {
     private String MAC;
     private int nivel = 0;
     private List<ProgressBar> progressBars;
+    private List<Drawable> inimigos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jogo);
 
+
         mBluetoothStatus = findViewById(R.id.fase_name);
+        progressBars = new ArrayList<>();
+        inimigos = new ArrayList<>();
         progressBars.add(findViewById(R.id.prgresse1));
         progressBars.add(findViewById(R.id.prgresse2));
         progressBars.add(findViewById(R.id.prgresse3));
+        inimigos.add(getResources().getDrawable(R.drawable.monstro1));
+        inimigos.add(getResources().getDrawable(R.drawable.monstro2));
+        inimigos.add(getResources().getDrawable(R.drawable.monstro3));
+        vilao = findViewById(R.id.vilao);
         setProgresso();
 
 
@@ -161,21 +173,31 @@ public class JogoActivity extends AppCompatActivity {
     }
 
     public void  reset(View view){
-            progresso = 0;
-            progressBar =  findViewById(R.id.prgresse1);
-            ((ProgressBar)findViewById(R.id.prgresse1)).setProgress(0);
-            ((ProgressBar)findViewById(R.id.prgresse2)).setProgress(0);
-            ((ProgressBar)findViewById(R.id.prgresse3)).setProgress(0);
+           reset();
+    }
+
+    public void  reset(){
+        progresso = 0;
+        for (ProgressBar progressBar: progressBars) {
+            progressBar.setProgress(0);
+        }
+        nivel = 0;
+        setProgresso();
 
     }
 
     private void setPontos() {
+        if(primeira){
+            primeira = false;
+            return;
+        }
         if (statusMao){
             progresso += incremento;
             progressBar.setProgress(progresso);
             if(progresso >= 100) {
                 progresso = 0;
                 nivel++;
+                if (nivel > 3) reset();
                 incremento -= 5;
                 setProgresso();
             }
@@ -187,6 +209,7 @@ public class JogoActivity extends AppCompatActivity {
     private void  setProgresso(){
         progressBar = progressBars.get(nivel);
         ((TextView)findViewById(R.id.level_vilao)).setText("Enemy Lvl "+(nivel+1));
+        vilao.setImageDrawable(inimigos.get(nivel));
     }
 
 
