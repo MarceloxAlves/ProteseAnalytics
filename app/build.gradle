@@ -43,4 +43,6 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.3.0'
 
     compile  'com.google.android.gms:play-services-auth:11.8.0'
+
+    compile 'com.facebook.android:facebook-android-sdk:4.1.0'
 }
