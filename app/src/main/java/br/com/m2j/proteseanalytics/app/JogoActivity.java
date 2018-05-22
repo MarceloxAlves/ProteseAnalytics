@@ -182,6 +182,7 @@ public class JogoActivity extends AppCompatActivity {
             progressBar.setProgress(0);
         }
         nivel = 0;
+        incremento =15;
         setProgresso();
 
     }
