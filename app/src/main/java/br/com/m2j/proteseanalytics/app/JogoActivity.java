@@ -197,7 +197,7 @@ public class JogoActivity extends AppCompatActivity {
             if(progresso >= 100) {
                 progresso = 0;
                 nivel++;
-                if (nivel > 3) reset();
+                if (nivel >= 3) reset();
                 incremento -= 5;
                 setProgresso();
             }
